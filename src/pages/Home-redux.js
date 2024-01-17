@@ -4,6 +4,7 @@ import store from "../redux/store";
 import { Provider } from "react-redux";
 
 export default function HomeRedux() {
+  console.log("==> Home (redux)");
   return (
     <Provider store={store}>
       <div className="App">

@@ -3,6 +3,7 @@ import { useDispatch } from "react-redux";
 import counter from "../redux/reducers/counter";
 
 export default function Actions() {
+  console.log("==> Actions (reduc)");
   const { increment, decrement } = counter.actions;
   const dispatch = useDispatch();
 

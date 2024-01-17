@@ -3,6 +3,7 @@ import Actions from "../components-context/Actions";
 import counterStore from "../context/counterStore";
 
 export default function HomeContext() {
+  console.log("==> Home (context)");
   const { context, actions } = counterStore;
   return (
     <context.Provider value={actions(0)}>

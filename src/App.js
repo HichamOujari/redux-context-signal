@@ -1,7 +1,10 @@
 import "./styles.css";
 import HomeRedux from "./pages/Home-redux";
 import HomeContext from "./pages/Home-context";
+import HomeSignal from "./pages/Home-signal";
+
 export default function App() {
+  console.log("==> App");
   return (
     <>
       <center>
@@ -9,6 +12,7 @@ export default function App() {
       </center>
       <HomeContext />
       <HomeRedux />
+      <HomeSignal />
     </>
   );
 }

@@ -2,6 +2,7 @@ import React, { useContext } from "react";
 import counterStore from "../context/counterStore";
 
 export default function Actions() {
+  console.log("==> Actions (context)");
   const useCounter = useContext(counterStore.context);
   return (
     <div>
